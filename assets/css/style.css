@@ -1,0 +1,67 @@
+/************************************************
+    UTILITIES
+ ************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flexible {
+    display: flex;
+}
+
+.just-between {
+    justify-content: space-between;
+}
+
+.wrapped {
+    flex-wrap: wrap;
+}
+
+.alitem-center {
+    align-items: center;
+}
+
+.bc-blue {
+    background-color: rgb(39, 39, 243);
+}
+
+.bg-black {
+    background-color: rgb(10, 10, 10);
+}
+
+
+.container-90 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.bc-lightblue {
+    background-color: rgb(124, 194, 218);
+}
+
+
+.debug {
+    border: 1px dashed black;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolut {
+    position: absolute;
+}
+
+
+/************************************************
+SITE SECTIONS
+************************************************/
