@@ -8,12 +8,26 @@
     box-sizing: border-box;
 }
 
+/* Flex Commands */
+
 .flexible {
     display: flex;
 }
 
 .just-between {
     justify-content: space-between;
+}
+
+.just-around {
+    justify-content: space-around;
+}
+
+.just-center {
+    justify-content: center;
+}
+
+.just-end {
+    justify-content: flex-end;
 }
 
 .wrapped {
@@ -24,14 +38,11 @@
     align-items: center;
 }
 
-.bc-blue {
-    background-color: rgb(39, 39, 243);
+.flex-column {
+    flex-direction: column;
 }
 
-.bg-black {
-    background-color: rgb(10, 10, 10);
-}
-
+/* Sizes Commands */
 
 .container-90 {
     width: 90%;
@@ -44,10 +55,19 @@
 }
 
 
-.bc-lightblue {
+/* Colors Classes */
+
+.bg-lightblue {
     background-color: rgb(124, 194, 218);
 }
 
+.bg-blue {
+    background-color: rgb(39, 39, 243);
+}
+
+.bg-black {
+    background-color: rgb(10, 10, 10);
+}
 
 .debug {
     border: 5px solid rgb(113, 4, 255);
@@ -66,8 +86,157 @@
 SITE SECTIONS
 ************************************************/
 
+/* General Place Elements */
 
 .total {
     width: 100%;
     height: 100vh;
+    background-color: rgb(43, 43, 49);
+}
+
+/* Nav Elements */
+
+nav {
+    width: 2.5rem;
+    height: calc(100vh - 4rem);
+}
+
+nav div a i {
+    color: #fff;
+    margin: 0.3rem;
+    opacity: 0.3;
+    transition: all 0.1s ease 0.1s;
+
+}
+
+nav div a i:hover {
+    opacity: 1;
+}
+
+.second-total-nav a:last-child i {
+    font-size: 2rem;
+}
+
+/* Header Elements */
+
+.header {
+    width: calc(100% - 2.5rem);
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0.75;
+}
+
+.header span a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.7rem;
+    padding: 0.35rem 1.5rem;
+    border: 1px solid white;
+    border-radius: 1.25rem;
+    transition: all 0.1s ease 0.1s;
+}
+
+.header span a:hover {
+    font-size: 1.25rem;
+    padding: 0.9rem 2.05rem;
+    border-radius: 1.8rem;
+}
+
+/* Footer Elements */
+
+.mooter {
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(58, 59, 61);
+}
+
+.moot-left {
+    width: 30%;
+}
+
+.moot-mid {
+    width: 40%;
+}
+
+.moot-right {
+    width: 30%;
+}
+
+.moot-x-l div * {
+    width: 100%;
+}
+
+.moot-x-l p {
+    font-size: 0.6rem;
+}
+
+.moot-x-l p {
+    color: #fff;
+}
+
+.moot-x-l p:nth-child(2),
+.moot-x-l p:nth-child(3) {
+    opacity: 0.3;
+    transition: all 0.1s ease 0.1s;
+}
+
+.moot-x-l p:nth-child(2):hover,
+.moot-x-l p:nth-child(3):hover {
+    opacity: 1;
+}
+
+.moot-x-l div {
+    width: 45%;
+}
+
+.moot-x-l {
+    width: 60%;
+}
+
+.moot-x-r {
+    width: 40%;
+    margin: 1rem 0.5rem;
+}
+
+.moot-x-r i {
+    color: #fff;
+    opacity: 0.3;
+    transition: all 0.1s ease 0.1s;
+}
+
+.moot-x-r i:hover {
+    opacity: 1;
+}
+
+.moot-x-r i {
+    display: block;
+}
+
+.moot-mid input {
+    width: 15rem;
+}
+
+.moot-mid i {
+    color: #fff;
+    opacity: 0.3;
+    transition: all 0.1s ease 0.1s;
+}
+
+.moot-mid i:hover {
+    opacity: 1;
+}
+
+.moot-right i {
+    margin: 0 1rem;
+    color: #fff;
+    opacity: 0.3;
+    transition: all 0.1s ease 0.1s;
+}
+
+.moot-right i:hover {
+    opacity: 1;
 }
