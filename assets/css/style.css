@@ -30,6 +30,10 @@
     justify-content: flex-end;
 }
 
+.just-evenly {
+    justify-content: space-evenly;
+}
+
 .wrapped {
     flex-wrap: wrap;
 }
@@ -81,6 +85,11 @@
     position: absolute;
 }
 
+.none {
+    display: none;
+}
+
+
 
 /************************************************
 SITE SECTIONS
@@ -94,27 +103,50 @@ SITE SECTIONS
     background-color: rgb(43, 43, 49);
 }
 
+.pad {
+    height: calc(100vh - 4rem);
+    width: calc(100% - 2.5rem);
+}
+
 /* Nav Elements */
 
-nav {
+nav,
+.phantom,
+.none {
     width: 2.5rem;
     height: calc(100vh - 4rem);
 }
 
-nav div a i {
-    color: #fff;
-    margin: 0.3rem;
-    opacity: 0.3;
-    transition: all 0.1s ease 0.1s;
 
+nav div a img {
+    width: 1.2rem;
+    color: #fff;
+    opacity: 0.3;
+    margin: 0.3rem 0;
+    transition: all 0.1s ease 0.1s;
 }
 
-nav div a i:hover {
+nav div a img:hover {
     opacity: 1;
 }
 
 .second-total-nav a:last-child i {
     font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.3;
+    transition: all 0.1s ease 0.1s;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+.none div ul li span {
+    width: 10rem;
 }
 
 /* Header Elements */
@@ -124,7 +156,7 @@ nav div a i:hover {
     height: 5rem;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 2.5rem;
     opacity: 0.75;
 }
 
@@ -217,7 +249,7 @@ nav div a i:hover {
 }
 
 .moot-mid input {
-    width: 15rem;
+    margin: 0 0.5rem;
 }
 
 .moot-mid i {
@@ -239,4 +271,122 @@ nav div a i:hover {
 
 .moot-right i:hover {
     opacity: 1;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+    outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #e27cdd;
+    border-radius: 3rem;
+    height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    margin-top: 0px;
+    /* Centers thumb on the track */
+    background-color: #272222;
+    border-radius: 1rem;
+    height: 0.5rem;
+    width: 1.5rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 3px solid #8f3232;
+    outline-offset: 0.125rem;
+}
+
+/* central area elements  */
+
+.pad {
+    margin-top: 6rem;
+}
+
+.titles p {
+    color: #fff;
+    font-size: 0.5rem;
+    margin: 3px;
+    opacity: 0.3;
+    width: calc(100% / 4 - 3%);
+    transition: all 0.1s ease 0.1s;
+}
+
+.titles p:hover {
+    opacity: 1;
+}
+
+
+
+
+
+/************************************************
+MEDIA QUERY
+************************************************/
+
+
+@media only screen and (min-width: 425px) {
+    nav {
+        width: 14rem;
+    }
+
+    .phantom {
+        display: none;
+    }
+
+    .none {
+        display: block;
+    }
+
+    .none div ul li a {
+        display: flex;
+        margin: 1.25rem 0.75rem;
+    }
+
+    .header {
+        width: calc(100% - 14rem);
+        left: 12rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .titles p {
+        width: calc(100% / 3 - 3%);
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .titles p {
+        width: calc(100% / 5 - 3%);
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .titles p {
+        width: calc(100% / 6 - 3%)
+    }
+
+    .titles {
+        justify-content: center;
+    }
 }
