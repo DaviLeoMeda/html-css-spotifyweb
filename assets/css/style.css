@@ -118,15 +118,16 @@ nav {
 
 .phantom,
 .none {
-    height: calc(100vh-4rem);
+    height: calc(100vh - 4rem);
 }
 
 
 nav div a img {
-    width: 1.2rem;
+    width: 2rem;
     color: #fff;
     opacity: 0.6;
     margin: 0.3rem 0;
+    margin-right: 1rem;
     transition: all 0.1s ease 0.1s;
 }
 
@@ -152,6 +153,24 @@ a:hover {
 .none div ul li span {
     width: 10rem;
 }
+
+.none div ul li a,
+.nav-playlist div a {
+    display: flex;
+    margin: 1.25rem 0.75rem;
+    align-items: center;
+}
+
+.nav-playlist h5 {
+    color: #fff;
+    margin-left: 0.75rem;
+}
+
+.nav-playlist div a i {
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
 
 /* Header Elements */
 
@@ -201,6 +220,10 @@ a:hover {
 .moot-right {
     width: 30%;
 }
+
+/* .moot-x-l div:first-child {
+    height: 90%;
+} */
 
 
 .moot-x-l div img {
@@ -381,9 +404,9 @@ MEDIA QUERY
         width: 100%;
     }
 
-    .moot-x-l div {
+    /* .moot-x-l div {
         height: 90%;
-    }
+    } */
 }
 
 
@@ -402,11 +425,6 @@ MEDIA QUERY
         display: block;
     }
 
-    .none div ul li a {
-        display: flex;
-        margin: 1.25rem 0.75rem;
-        align-items: center;
-    }
 
     .header {
         width: calc(100% - 14rem);
@@ -417,9 +435,15 @@ MEDIA QUERY
         width: calc(100% - 14rem);
     }
 
+    .moot-x-l div:first-child {
+        height: 90%;
+    }
+
 
 
 }
+
+/*   AVVISO!!!!!!!!!!!!!!!!!!1 (da togliere il max e rimettere in quello min 425) */
 
 @media only screen and (min-width: 425px) and (max-width: 768px) {
     .titles p {
