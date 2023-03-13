@@ -46,7 +46,7 @@
             </div>
 
 
-            <div class="none flexible flex-column just-between">
+            <div class="none flexible flex-column">
 
                 <img src="./assets/img/logo.svg" alt="">
 
@@ -77,15 +77,18 @@
 
                     </div>
 
-                    <ul>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                    </ul>
+                    <div id="newplaylist">
+                        <ul>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                        </ul>
+                    </div>
+
 
                 </div>
 
@@ -93,10 +96,10 @@
                 <div class="flexible flex-column second-total-nav">
                     <a href="#"><i class="fa-solid fa-circle-arrow-down"></i><span>Installa l'app</span></a>
 
-                    <br>
+                    <hr>
 
-                    <a href="#"><i class="fa-regular fa-circle-user"></i>
-                        <h6>John Doe</h6>
+                    <a class="flexible alitem-center" href="#"><i class="fa-regular fa-circle-user"></i>
+                        <h4>John Doe</h4>
                     </a>
                 </div>
 
@@ -209,76 +212,120 @@
                         </a>
                     </div>
                 </div>
-            </div>
 
-        </div>
+                <h2>Creato per John Doe</h2>
 
+                <div class="cards flexible">
 
-        <!-- Header Up -->
-
-        <div class="header bg-black flexible just-end">
-
-            <span class="flexible alitem-center"><a href="#"><strong>EFFETTUA L'UPGRADE</strong></a></span>
-
-        </div>
-
-
-        <!-- A kind of Footer -->
-
-        <div class="mooter flexible just-between">
-
-            <div class="moot-left flexible just-between">
-
-                <div class="moot-x-l flexible alitem-center just-between">
-
-                    <div class="flexible alitem-center">
-                        <img src="./assets/img/sinister.jpeg" alt="">
+                    <div class="album-john">
+                        <div class="img-cage relative">
+                            <img src="./assets/img/radar.jpeg" alt="">
+                        </div>
+                        <h4>Release Radar</h4>
                     </div>
 
-                    <div class="flexible just-center flex-column">
-                        <p>Sinister</p>
-                        <p>Brano</p>
-                        <p>Nome</p>
+                    <div class="album-john">
+                        <div class="img-cage relative">
+                            <img src="./assets/img/mixdaily.jpeg" alt="">
+                        </div>
+                        <h4>Daily Mix</h4>
                     </div>
 
                 </div>
 
-                <div class=" moot-x-r">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
+                <h2>Artisti più popolari</h2>
+
+                <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
+
+                <div class="cards final flexible">
+
+                    <div class="popolar">
+                        <div class="img-cage">
+                            <img src="./assets/img/youg.jpeg" alt="">
+                        </div>
+                        <h4>Lana Del Rey</h4>
+                    </div>
+
+                    <div class="popolar">
+                        <div class="img-cage">
+                            <img src="./assets/img/einaudi.jpeg" alt="">
+                        </div>
+                        <h4>Ludovico Einaudi</h4>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Header Up -->
+
+    <div class="header bg-black flexible just-end">
+
+        <span class="flexible alitem-center"><a href="#"><strong>EFFETTUA L'UPGRADE</strong></a></span>
+
+    </div>
+
+
+    <!-- A kind of Footer -->
+
+    <div class="mooter flexible just-between">
+
+        <div class="moot-left flexible just-between">
+
+            <div class="moot-x-l flexible alitem-center just-between">
+
+                <div class="flexible alitem-center">
+                    <img src="./assets/img/sinister.jpeg" alt="">
+                </div>
+
+                <div class="flexible just-center flex-column">
+                    <p>Sinister</p>
+                    <p>Brano</p>
+                    <p>Nome</p>
                 </div>
 
             </div>
 
-            <div class="moot-mid flex-column flexible just-around">
+            <div class=" moot-x-r">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
 
-                <div class="flexible just-around">
-                    <i class="fa-solid fa-shuffle"></i>
-                    <i class="fa-solid fa-backward-step"></i>
-                    <i class="fa-regular fa-circle-play"></i>
-                    <i class="fa-solid fa-forward-step"></i>
-                    <i class="fa-solid fa-arrow-rotate-right"></i>
+        </div>
 
-                </div>
+        <div class="moot-mid flex-column flexible just-around">
 
-                <div class="flexible just-center">
-                    <span>0:00</span>
-                    <input type="range">
-                    <span>4:35</span>
-
-                </div>
-
+            <div class="flexible just-around">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-arrow-rotate-right"></i>
 
             </div>
 
-            <div class="moot-right flexible just-center alitem-center">
-                <i class="fa-solid fa-list"></i>
-                <i class="fa-solid fa-display"></i>
+            <div class="flexible just-center">
+                <span>0:00</span>
+                <input type="range">
+                <span>4:35</span>
 
             </div>
 
 
         </div>
+
+        <div class="moot-right flexible just-center alitem-center">
+            <i class="fa-solid fa-list"></i>
+            <i class="fa-solid fa-display"></i>
+
+        </div>
+
+
+    </div>
 
 
     </div>

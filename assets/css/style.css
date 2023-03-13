@@ -171,8 +171,23 @@ a:hover {
     font-size: 2rem;
 }
 
-.second-total-nav a:last-child h6 {
-    display: inline-block;
+.second-total-nav {
+    margin-left: 0.75rem;
+    margin-top: 25rem;
+}
+
+.second-total-nav a {
+    margin: 0.75rem 0;
+}
+
+.second-total-nav a h4,
+.second-total-nav a span {
+    padding-left: 0.75rem;
+}
+
+
+#newplaylist {
+    overflow: hidden;
 }
 
 
@@ -369,7 +384,8 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 /* Music Elements */
 
-.music h2 {
+.music h2,
+.music h5 {
     color: #fff;
     margin: 2.5rem 0;
 
@@ -387,7 +403,8 @@ input[type="range"]:focus::-webkit-slider-thumb {
     gap: 2%;
 }
 
-.album a {
+.album a,
+.album-john {
     text-align: center;
 }
 
@@ -455,6 +472,35 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 
 
+.album-john,
+.popolar {
+    width: calc(100% / 2 - 2%);
+}
+
+.final {
+    margin-bottom: 30rem;
+}
+
+.album-john .img-cage img,
+.popolar .img-cage img {
+    width: 100%;
+}
+
+.album-john h4 {
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.popolar h4 {
+    color: #fff;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.popolar img {
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 
 
@@ -475,9 +521,7 @@ MEDIA QUERY
         width: 100%;
     }
 
-    /* .moot-x-l div {
-        height: 90%;
-    } */
+
 }
 
 
@@ -528,7 +572,9 @@ MEDIA QUERY
         width: calc(100% / 5 - 3%);
     }
 
-    .album {
+    .album,
+    .album-john,
+    .popolar {
         width: calc(100% / 4 - 2%);
     }
 }
@@ -543,7 +589,9 @@ MEDIA QUERY
         justify-content: center;
     }
 
-    .album {
+    .album,
+    .album-john,
+    .popolar {
         width: calc(100% / 6 - 2%);
     }
 }
