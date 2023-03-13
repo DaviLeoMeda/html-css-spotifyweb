@@ -171,6 +171,10 @@ a:hover {
     font-size: 2rem;
 }
 
+.second-total-nav a:last-child h6 {
+    display: inline-block;
+}
+
 
 /* Header Elements */
 
