@@ -158,31 +158,29 @@ a:hover {
     width: 7rem;
 }
 
-/* .none div ul li span {
-    width: 10rem;
+.body-nav h5 {
+    color: #fff;
+    margin-bottom: 0.75rem;
 }
 
-.none div ul li a,
-.nav-playlist div a {
+.plus-square {
+    margin-bottom: 0.75rem;
+}
+
+.plus-square a {
     display: flex;
-    margin: 0.75rem 0.75rem;
     align-items: center;
 }
 
-.nav-playlist h5 {
-    color: #fff;
-    margin-left: 0.75rem;
-}
-
-.nav-playlist div a i {
-    margin-right: 1rem;
+.plus-square i {
     font-size: 2rem;
+    margin-right: 0.5rem;
 }
 
-.second-total-nav {
-    margin-left: 0.75rem;
-
+#newplaylist ul li {
+    margin: 0.5rem 0;
 }
+
 
 .second-total-nav a {
     margin: 0.75rem 0;
@@ -191,7 +189,7 @@ a:hover {
 .second-total-nav a h4,
 .second-total-nav a span {
     padding-left: 0.75rem;
-} */
+}
 
 
 
